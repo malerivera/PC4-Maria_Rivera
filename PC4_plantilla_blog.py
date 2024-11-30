@@ -40,7 +40,7 @@ sidebar = st.sidebar
 # Pero, a diferencia de st.markdown, el texto estará alineado a la izquierda y no podrás cambiar el color del texto.
 
 # La función st.markdown permite centrar y agrandar la letra del título de la web en Streamlit.
-st.markdown("<h1 style='text-align: center;'>Aquí escribe un nombre creativo para tu blog</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>Drama Version</h1>", unsafe_allow_html=True)
 
 # <h1 style='text-align: center;'>Nombre de tu blog</h1>: Esto es una cadena de código HTML. 
 # La etiqueta <h1> se utiliza para el encabezado principal de una página web, y 
@@ -60,7 +60,7 @@ col1, col2 = st.columns(2)
 # Las columnas creadas se asignan a las variables col1 y col2.
 
 # En la primera columna colocamos la imagen
-col1.image("ellie.png", caption='Aquí puedes escribir una tiqueta debajo de la imagen', width=300)
+col1.image("IMG_5224.JPG", caption='Esta soy yo', width=300)
 
 # col1.image("ellie.png", caption='Ellie', width=300): Esta línea está colocando una imagen en la primera columna (col1). 
 # La función image toma como primer argumento la ruta de la imagen que se va a mostrar. 
@@ -73,7 +73,10 @@ col1.image("ellie.png", caption='Aquí puedes escribir una tiqueta debajo de la 
 # ¿Qué te gustaría hacer en el futuro?, ¿Qué te gusta hacer en tu tiempo libre?
 
 texto = """
-Aquí escribe una presentación creativa sobre ti.
+¡Hola! Mi nombre es María Alejandra Rivera, aunque todos me dicen Male. Estudio Periodismo, una carrera que me apasiona porque se centra en el arte de contar historias, en conocer personas y realidades diversas. Al principio pensaba dedicarme a la prensa escrita, pero recientemente decidí abrirme a nuevas oportunidades y explorar otras áreas.
+En el futuro, me gustaría ser escritora, ya que desde niña he sentido una conexión especial con la escritura y el poder que tiene para expresar y crear. También me atrae la idea de trabajar como reportera o periodista de investigación, en algún medio de comunicación de mi país o el extranjero. A su vez, empecé a considerar el mundo de la publicidad, específicamente en el rol de redactora creativa, donde podría aportar mi creatividad en campañas que conecten con las personas. Lo único que sé con certeza es que quiero ser artista. 
+En mi tiempo libre, me encanta escribir poemas y canciones inspirados en mi vida personal, así como relatos. La música es una parte importante de mi vida, y hace poco me animé a probar el modelaje, algo que me ha resultado muy interesante. Además, me gustaría aventurarme en el mundo de la actuación en unos meses.
+
 """
 
 # Las comillas triples (""") en Python se utilizan para definir cadenas multilínea.
@@ -109,7 +112,10 @@ st.markdown("<h2 style='text-align: center;'>Mi experiencia aprendiendo a progra
 
 # Agregar un  texto para la respuesta
 texto_2 = """
-Aquí escribe tu experiencia aprendiendo a programar. 
+Al principio, aprender a programar me resultó complicado y algo frustrante. No entendía mucho, y los errores me hacían dudar de mis habilidades. Sin embargo, con el tiempo entendí que la programación es un proceso de resolución de problemas, y eso me ha enseñado a ser más paciente y persistente.
+Lo que más me gusta de programar es la satisfacción de ver algo funcionar después de mucho trabajo. Me gusta la creatividad que se puede aplicar, pero lo que no me gusta tanto es la curva de aprendizaje, sobre todo cuando enfrento problemas complejos.
+En el futuro, me gustaría seguir aprendiendo programación para integrarla en mis proyectos artísticos y literarios, o en mi carrera periodística y publicitaria. Creo que la programación puede ser una herramienta poderosa para desarrollar proyectos creativos, contar historias de manera innovadora y crear contenido digital que conecte con las personas.
+
 """
 
 # Mostramos el texto
@@ -134,12 +140,12 @@ st.markdown("<h2 style='text-align: center;'>Explicación de un tema de las clas
 # unsafe_allow_html=True: Este es un argumento opcional en la función markdown.
 
 # Agregamos un video a la aplicación web ( menor a 20 MB)
-st.video("ppc-2024-1.mp4")
+st.video("parte 2.mp4")
 # st.video("ppc-2024-1.mp4"): Esta línea está agregando un video a la aplicación web.
 
 
 # Agregamos un enlace a la página web donde está el video.
-enlace = f'<a href="https://drive.google.com/file/d/1CbCTv4EFV5G5XH7rOpIcPmjKr23Muojs/view?usp=drive_link" target="_blank"><button>Nombre creativo para el botón</button></a>'
+enlace = f'<a href="https://drive.google.com/file/d/1obazXPdnlfzrdR-3PxRw71tIt7TrcKJY/view?usp=sharing" target="_blank"><button>Nombre creativo para el botón</button></a>'
 st.markdown(enlace, unsafe_allow_html=True)
 # f'<a href="URL" target="_blank"><button>Nombre</button></a>':
 # La etiqueta <a> se utiliza para crear un enlace en HTML.
@@ -151,7 +157,7 @@ st.markdown(enlace, unsafe_allow_html=True)
 
 
 # Agregamos un subtítulo en la barra lateral
-sidebar.markdown("<h1 style='text-align: center;'>Aquí escribe un nombre creativo para presentar tus gráficos</h1>", unsafe_allow_html=True)
+sidebar.markdown("<h1 style='text-align: center;'>Algunos gráficos</h1>", unsafe_allow_html=True)
 
 # <h1 style='text-align: center;'>Los análisis de Ellie</h1>: Esta es una cadena de código HTML.
 # La etiqueta <h1> se utiliza para el encabezado principal de una página web.
@@ -159,7 +165,7 @@ sidebar.markdown("<h1 style='text-align: center;'>Aquí escribe un nombre creati
 # El texto dentro de las etiquetas <h1> ("Los análisis de Ellie") es el contenido del encabezado.
 
 # Creamos una lista de gráficos
-graficos = ['Lenguas aisladas', 'Familias lingüísticas', 'Mapa de las lenguas sudamericanas']
+graficos = ['Mapa de películas', 'Promedio de tarjetas rojas', 'Taylor Swift']
 
 # Creamos un cuadro de selección en la barra lateral
 grafico_seleccionado = sidebar.selectbox('Selecciona un gráfico', graficos)
@@ -172,17 +178,17 @@ grafico_seleccionado = sidebar.selectbox('Selecciona un gráfico', graficos)
 # La función selectbox se utiliza para crear un cuadro de selección en la barra lateral.
 
 # Mostramos el gráfico seleccionado
-if grafico_seleccionado == 'Lenguas aisladas':
-    sidebar.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu gráfico</div>", unsafe_allow_html=True)
-    sidebar.image("aisladas_base_datos.png", caption='Lenguas aisladas', width=500)
+if grafico_seleccionado == 'Mapa de películas':
+    sidebar.markdown("<div style='text-align: justify; font-size: 20px;'>Este es un mapa con la ubicación del rodaje de algunas películas.</div>", unsafe_allow_html=True)
+    sidebar.image("Captura de pantalla 2024-11-20 130555.png", caption='Mapa de películas', width=500)
     pass
-elif grafico_seleccionado == 'Familias lingüísticas':
-    sidebar.markdown("<div style='text-align: justify'>Texto para la opción 2.</div>", unsafe_allow_html=True)
-    sidebar.image("lengua_familia_GB.png", caption='Familias lingüísticas', width=500)
+elif grafico_seleccionado == 'Promedio de tarjetas rojas':
+    sidebar.markdown("<div style='text-align: justify'>Este es un gráfico de barras con el promedio de tarjetas rojas recibidas como visitante en los equipos de la liga de fútbol italiana.</div>", unsafe_allow_html=True)
+    sidebar.image("Captura de pantalla 2024-11-20 131024.png", caption='Promedio de tarjetas rojas', width=500)
     pass
-elif grafico_seleccionado == 'Mapa de las lenguas sudamericanas':
-    sidebar.markdown("<div style='text-align: justify'>Texto para la opción 3.</div>", unsafe_allow_html=True)
-    sidebar.image("mapa_familias_aisladas_S.jpg", caption='Mapa de las lenguas sudamericanas', width=500)
+elif grafico_seleccionado == 'Taylor Swift':
+    sidebar.markdown("<div style='text-align: justify'>Esta es una nube de palabras con la letra de la canción Fortnight de Taylor Swift.</div>", unsafe_allow_html=True)
+    sidebar.image("Captura de pantalla 2024-11-20 131353.png", caption='Fortnight de Taylor Swift', width=500)
     pass
 
 # if grafico_seleccionado == 'Gráfico de Macroareas': Esta línea verifica si la opción seleccionada es 'Gráfico de Macroareas'.
