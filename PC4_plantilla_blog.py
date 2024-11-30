@@ -145,7 +145,7 @@ st.video("parte 2.mp4")
 
 
 # Agregamos un enlace a la página web donde está el video.
-enlace = f'<a href="https://drive.google.com/file/d/1obazXPdnlfzrdR-3PxRw71tIt7TrcKJY/view?usp=sharing" target="_blank"><button>Nombre creativo para el botón</button></a>'
+enlace = f'<a href="https://drive.google.com/file/d/1obazXPdnlfzrdR-3PxRw71tIt7TrcKJY/view?usp=sharing" target="_blank"><button>Aquí otro video</button></a>'
 st.markdown(enlace, unsafe_allow_html=True)
 # f'<a href="URL" target="_blank"><button>Nombre</button></a>':
 # La etiqueta <a> se utiliza para crear un enlace en HTML.
